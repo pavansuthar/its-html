@@ -1,0 +1,27 @@
+link {
+  display: none;
+}
+
+nav {
+  display: block;
+}
+
+/* a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+} */
+
+a:link,
+a:visited {
+  /* color: (internal value); */
+  color: #000000;
+  text-decoration: underline;
+  cursor: auto;
+}
+
+a:link:active,
+a:visited:active {
+  /* color: (internal value); */
+  color: #000000;
+}

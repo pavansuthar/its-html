@@ -1,0 +1,14 @@
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  display: inline-block;
+}
+
+map {
+  display: inline;
+}
+
+area {
+  display: none;
+}
+

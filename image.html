@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML - Image</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/global.css" />
+    <link rel="stylesheet" href="./style/image.css" />
+  </head>
+  <body>
+    <h1>
+      HTML by <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+    </h1>
+    <p><strong>Tags #</strong></p>
+    <nav>
+      <a href="index.html"><b>HTML</b></a>
+      <a href="heading.html"><b>Heading</b></a>
+      <a href="paragraph.html"><b>Paragraph</b></a>
+      <small>(with hr/br/pre tag)</small>
+      <a href="formatting.html"><b>Text Formatting</b></a>
+      <a href="image.html"><b>Image</b></a>
+    </nav>
+    <a href="images/html.png" target="_blank" download
+      ><img
+        src="https://www.w3schools.com/images/w3schools_green.jpg"
+        alt="html5 logo"
+        width="140"
+        height="142"
+    /></a>
+    <img
+      src="./images/programming.gif"
+      alt="programmer"
+      style="width: 48px; height: 48px"
+    />
+    <p>Images can improve the design and the appearance of a web page.</p>
+    <p>The HTML &#60;img&#62; tag is used to embed an image in a web page.</p>
+    <p>
+      Images are not technically inserted into a web page; images are linked to
+      web pages. The &#60;img&#62; tag creates a holding space for the
+      referenced image.
+    </p>
+    <p>
+      The &#60;img&#62; tag is empty, it contains attributes only, and does not
+      have a closing tag.
+    </p>
+    <p>The required src attribute specifies the path (URL) to the image.</p>
+    <p>
+      The required alt attribute provides an alternate text for an image, if the
+      user for some reason cannot view it (because of slow connection, an error
+      in the src attribute, or if the user uses a screen reader). The value of
+      the alt attribute should describe the image. If a browser cannot find an
+      image, it will display the value of the alt attribute.
+    </p>
+    <p>
+      You can use the style attribute to specify the width and height of an
+      image. Alternatively, you can use the width and height attributes. The
+      width and height attributes always define the width and height of the
+      image in pixels.
+    </p>
+    <p>
+      HTML allows animated GIFs in image. Here are the most common image file
+      types, which are supported in all browsers: APNG, GIF, ICO, JPEG, PNG,
+      SVG.
+    </p>
+    <p>
+      The HTML &#60;picture&#62; element allows you to display different
+      pictures for different devices or screen sizes.
+    </p>
+    <picture>
+      <source
+        media="(min-width: 650px)"
+        srcset="./images/img_car.jpg"
+        sizes="300"
+      />
+      <source
+        media="(min-width: 465px)"
+        srcset="./images/img_food.jpg"
+        sizes="300"
+      />
+      <!-- Always specify last element as img as it is used by browsers which does not support picture element -->
+      <img
+        src="./images/img_girl.jpg"
+        alt="girl image"
+        width="500"
+        height="350"
+      />
+    </picture>
+  </body>
+</html>
